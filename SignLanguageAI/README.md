@@ -414,3 +414,9 @@ Possible future improvements include:
 * Better confidence filtering
 * Web-based interface
 * Real-time gesture-to-speech conversion
+
+## Demo
+
+![Sign Language Detection Demo](## Demo
+
+![Sign Language Detection Demo](your-photo-name.jpg))
