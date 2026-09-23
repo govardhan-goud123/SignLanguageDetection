@@ -416,7 +416,4 @@ Possible future improvements include:
 * Real-time gesture-to-speech conversion
 
 ## Demo
-
-![Sign Language Detection Demo](## Demo
-
-![Sign Language Detection Demo](your-photo-name.jpg))
+![Sign Language Detection Demo](Screenshot (83).png))
