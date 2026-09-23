@@ -1,0 +1,14 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.idea/
+.vscode/
+.env
+*.log
+*.zip
+*.rar
+Indian/
+.venv/
+__pycache__/
