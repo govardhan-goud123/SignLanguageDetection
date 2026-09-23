@@ -416,4 +416,4 @@ Possible future improvements include:
 * Real-time gesture-to-speech conversion
 
 ## Demo
-![Sign Language Detection Demo](Screenshot (83).png))
+![Sign Language Detection Demo](demo.png))
