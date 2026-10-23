@@ -1,167 +1,153 @@
 <div align="center">
 
-# Indian Sign Language AI
+<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=800&size=32&pause=1000&color=00F7FF&center=true&vCenter=true&width=850&height=70&lines=INDIAN+SIGN+LANGUAGE+AI;THE+FUTURE+OF+GESTURE+RECOGNITION;REAL-TIME+COMPUTER+VISION" alt="Animated project title"/>
 
-### Real-Time Hand Sign Recognition Using Computer Vision and Machine Learning
+### INTELLIGENCE THAT UNDERSTANDS HAND SIGNS
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00C7FF&center=true&vCenter=true&width=700&lines=Recognizing+Indian+Sign+Language;Powered+by+Computer+Vision;MediaPipe+%2B+Random+Forest;Real-Time+AI+Hand+Sign+Detection" alt="Animated project introduction" />
+<img src="https://img.shields.io/badge/ARTIFICIAL-INTELLIGENCE-00F7FF?style=for-the-badge&labelColor=080B18"/>
+<img src="https://img.shields.io/badge/COMPUTER-VISION-7B61FF?style=for-the-badge&labelColor=080B18"/>
+<img src="https://img.shields.io/badge/MACHINE-LEARNING-00E5A8?style=for-the-badge&labelColor=080B18"/>
 
 <br>
 
-<img src="https://img.shields.io/badge/Python-Machine%20Learning-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-<img src="https://img.shields.io/badge/OpenCV-Computer%20Vision-green?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV" />
-<img src="https://img.shields.io/badge/MediaPipe-Hand%20Tracking-orange?style=for-the-badge" alt="MediaPipe" />
-<img src="https://img.shields.io/badge/Scikit--learn-Random%20Forest-red?style=for-the-badge&logo=scikitlearn&logoColor=white" alt="Scikit-learn" />
-
-<br><br>
-
-**Turning hand gestures into recognizable letters through real-time AI.**
+*Transforming static hand gestures into recognizable letters through real-time AI.*
 
 </div>
 
 ---
 
-## Project Overview
+## SYSTEM OVERVIEW
 
-Indian Sign Language AI is a real-time computer vision application that recognizes static Indian Sign Language hand signs through a webcam.
+<table>
+<tr>
+<td align="center" width="50%">
 
-The system detects a hand, extracts 21 hand landmarks using MediaPipe, and passes the resulting numerical features to a trained Random Forest classifier to predict the corresponding letter.
+### VISION ENGINE
 
-The project combines computer vision, feature extraction, and machine learning in an interactive Python application.
+Hand detection and tracking using MediaPipe.
+
+**21 Hand Landmarks**
+
+</td>
+<td align="center" width="50%">
+
+### INTELLIGENCE ENGINE
+
+Hand sign classification using a trained Random Forest model.
+
+**Machine Learning**
+
+</td>
+</tr>
+<tr>
+<td align="center" width="50%">
+
+### LIVE RECOGNITION
+
+Real-time letter predictions displayed on the webcam feed.
+
+**Instant Feedback**
+
+</td>
+<td align="center" width="50%">
+
+### MODEL STORAGE
+
+Save and reload the trained classifier for future predictions.
+
+**Joblib Serialization**
+
+</td>
+</tr>
+</table>
+
+---
+
+## LIVE DEMONSTRATION
 
 <div align="center">
 
-|   Real-Time Detection  |  AI Classification  |         Live Prediction         |
-| :--------------------: | :-----------------: | :-----------------------------: |
-| Hand landmark tracking | Random Forest model | Predicted letter and confidence |
+![Indian Sign Language AI Demo](demo.png)
+
+*Real-time hand detection and static sign recognition.*
 
 </div>
 
 ---
 
-## Project Demonstration
+## TECHNOLOGY STACK
 
 <div align="center">
 
-<!-- Replace demo.gif with your actual recorded demonstration. -->
-
-<img src="demo.gif" width="750" alt="Indian Sign Language AI live demonstration" />
-
-**Live webcam → Hand landmarks → AI prediction**
+<img src="https://skillicons.dev/icons?i=python,opencv,sklearn,git,github&theme=dark" alt="Technology stack"/>
 
 </div>
 
-> **Note:** Add your actual `demo.gif` file to the repository to display the animated demonstration. Until then, use the `demo.png` screenshot below.
-
-![Sign Language Detection Demo](demo.png)
-
----
-
-## Technology Stack
-
-<div align="center">
-
-| Technology      | Role in the Project                  |
-| :-------------- | :----------------------------------- |
-| Python          | Application development              |
-| OpenCV          | Webcam capture and image processing  |
-| MediaPipe Hands | Detection of 21 hand landmarks       |
-| Scikit-learn    | Random Forest classification         |
-| NumPy           | Numerical feature processing         |
-| Joblib          | Saving and loading the trained model |
-| JSON            | Storing labels and training reports  |
-| PyCharm         | Python development environment       |
-
-</div>
+| Technology      | Application                         |
+| --------------- | ----------------------------------- |
+| Python          | Core programming                    |
+| OpenCV          | Webcam capture and image processing |
+| MediaPipe Hands | Detection of 21 hand landmarks      |
+| Scikit-learn    | Random Forest classification        |
+| NumPy           | Numerical feature processing        |
+| Joblib          | Model saving and loading            |
+| JSON            | Label and training report storage   |
+| PyCharm         | Development environment             |
 
 ---
 
-## How It Works
+## PROJECT ARCHITECTURE
 
-<div align="center">
+<table>
+<tr>
+<th>COMPONENT</th>
+<th>DESCRIPTION</th>
+</tr>
+<tr>
+<td><code>main.py</code></td>
+<td>Runs real-time webcam recognition.</td>
+</tr>
+<tr>
+<td><code>train.py</code></td>
+<td>Extracts features and trains the classifier.</td>
+</tr>
+<tr>
+<td><code>config.py</code></td>
+<td>Controls webcam and application settings.</td>
+</tr>
+<tr>
+<td><code>utils.py</code></td>
+<td>Contains reusable helper functions.</td>
+</tr>
+<tr>
+<td><code>test_mediapipe.py</code></td>
+<td>Tests webcam access and hand landmark detection.</td>
+</tr>
+<tr>
+<td><code>requirements.txt</code></td>
+<td>Lists the required Python packages.</td>
+</tr>
+<tr>
+<td><code>model/</code></td>
+<td>Stores the trained model and supporting files.</td>
+</tr>
+<tr>
+<td><code>Indian/</code></td>
+<td>Contains the labelled sign image dataset.</td>
+</tr>
+</table>
 
-```text
-                 LIVE WEBCAM
-                      |
-                      v
-                OPENCV ENGINE
-                      |
-                      v
-              HAND LANDMARK DETECTION
-                      |
-                      v
-                MEDIAPIPE HANDS
-                      |
-                      v
-               21 HAND LANDMARKS
-                      |
-                      v
-                FEATURE EXTRACTION
-                      |
-                      v
-              RANDOM FOREST CLASSIFIER
-                      |
-                      v
-                PREDICTED LETTER
-                      |
-                      v
-                 LIVE DISPLAY
-```
-
-</div>
-
-### Recognition Pipeline
-
-**01 — Capture**
-
-OpenCV captures live video frames from the webcam.
-
-**02 — Detect**
-
-MediaPipe Hands identifies the hand and locates 21 important landmarks.
-
-**03 — Extract**
-
-The landmarks are converted into numerical features for classification.
-
-**04 — Predict**
-
-The trained Random Forest model predicts the most likely sign label.
-
-**05 — Display**
-
-The application displays the prediction, confidence score, hand landmarks, bounding box, and FPS.
-
----
-
-## Features
-
-* Real-time webcam-based sign recognition
-* Detection and visualization of 21 hand landmarks
-* Random Forest machine learning classifier
-* Live letter prediction
-* Prediction confidence display
-* Frames-per-second monitoring
-* Configurable webcam selection
-* Optional mirrored webcam view
-* Saved model for repeated inference
-* Cached landmark features for faster retraining, when supported by the training implementation
-
----
-
-## Project Structure
+### DIRECTORY STRUCTURE
 
 ```text
 SignLanguageAI/
 │
 ├── .venv/
-│
 ├── Indian/
 │   ├── A/
 │   ├── B/
 │   ├── C/
-│   ├── ...
-│   └── Z/
+│   └── ... Z/
 │
 ├── model/
 │   ├── sign_language_model.joblib
@@ -174,383 +160,359 @@ SignLanguageAI/
 ├── config.py
 ├── utils.py
 ├── test_mediapipe.py
-│
 ├── requirements.txt
 ├── run_app.bat
 ├── run_train.bat
-├── README.md
 ├── demo.png
-└── demo.gif
+└── README.md
 ```
-
-### Important Files
-
-| File                         | Description                                     |
-| :--------------------------- | :---------------------------------------------- |
-| `main.py`                    | Starts the webcam recognition application       |
-| `train.py`                   | Trains the Random Forest classifier             |
-| `config.py`                  | Configures webcam and application settings      |
-| `utils.py`                   | Contains reusable helper functions              |
-| `test_mediapipe.py`          | Tests webcam and hand landmark detection        |
-| `requirements.txt`           | Lists project dependencies                      |
-| `sign_language_model.joblib` | Stores the trained classifier                   |
-| `labels.json`                | Stores the class labels                         |
-| `training_report.json`       | Stores training or evaluation information       |
-| `landmark_cache.npz`         | Stores cached landmark features, when generated |
 
 ---
 
-## Installation Guide
+## GETTING STARTED
 
-### Step 1 — Open the Project
+<table>
+<tr>
+<td width="65">
 
-Open Command Prompt and navigate to the project folder.
+**01 — INITIALIZE**
+
+Open Command Prompt and navigate to your project folder.
+
+</td>
+<td width="35">
 
 ```bat
 cd "C:\Users\Govardhan Goud\Downloads\SignLanguageAI_PyCharm_MediaPipe\SignLanguageAI"
 ```
 
-### Step 2 — Activate the Virtual Environment
+</td>
+</tr>
+<tr>
+<td>
+
+**02 — ACTIVATE ENVIRONMENT**
+
+Use the project's existing virtual environment.
+
+</td>
+<td>
 
 ```bat
 .venv\Scripts\activate
 ```
 
-### Step 3 — Check Python
+</td>
+</tr>
+<tr>
+<td>
 
-```bat
-python --version
-```
+**03 — INSTALL DEPENDENCIES**
 
-### Step 4 — Install Dependencies
+Install the packages listed in the requirements file.
+
+</td>
+<td>
 
 ```bat
 python -m pip install -r requirements.txt
 ```
 
-### Step 5 — Verify MediaPipe
+</td>
+</tr>
+<tr>
+<td>
+
+**04 — VERIFY MEDIAPIPE**
+
+Check that MediaPipe is installed correctly.
+
+</td>
+<td>
 
 ```bat
 python -c "import mediapipe as mp; print(mp.__version__)"
 ```
 
-Make sure the terminal uses the project's `.venv` environment.
+</td>
+</tr>
+</table>
 
 ---
 
-## Run the Project
+## LAUNCH THE AI
 
-<div align="center">
+<table>
+<tr>
+<td align="center" width="33%">
 
-### Step 01 — Test Hand Detection
+### TEST
 
-</div>
+Check hand detection.
 
 ```bat
 python test_mediapipe.py
 ```
 
-Verify that the webcam opens and MediaPipe detects the hand landmarks.
+</td>
+<td align="center" width="33%">
 
-Press `Q` to close the webcam.
+### TRAIN
 
-<div align="center">
-
-### Step 02 — Train the AI Model
-
-</div>
+Train the classifier.
 
 ```bat
 python train.py
 ```
 
-The training script processes the dataset, extracts landmark features, and trains the classifier.
+</td>
+<td align="center" width="33%">
 
-<div align="center">
+### RUN
 
-### Step 03 — Launch Real-Time Recognition
-
-</div>
+Start live recognition.
 
 ```bat
 python main.py
 ```
 
-The application starts the webcam and displays its predictions.
+</td>
+</tr>
+</table>
 
-### Keyboard Controls
+**Controls**
 
 | Key | Action                   |
-| :-: | :----------------------- |
-| `Q` | Quit the application     |
+| --- | ------------------------ |
+| `Q` | Exit the application     |
 | `R` | Reload the trained model |
 
 ---
 
-## Dataset Organization
+## CORE CAPABILITIES
 
-The dataset must contain separate folders for each supported letter.
+<table>
+<tr>
+<td width="50%" valign="top">
 
-```text
-Indian/
-├── A/
-│   ├── image1.jpg
-│   ├── image2.jpg
-│   └── ...
-├── B/
-│   ├── image1.jpg
-│   ├── image2.jpg
-│   └── ...
-├── C/
-│   └── ...
-└── Z/
-    └── ...
-```
+### HAND DETECTION
 
-Each folder should contain correctly labelled images for its corresponding sign.
+* Real-time webcam processing
+* Detection of 21 hand landmarks
+* Hand bounding box
+* Landmark visualization
 
-### Dataset Recommendations
+</td>
+<td width="50%" valign="top">
 
-* Include enough images for every class.
-* Use different lighting conditions and backgrounds.
-* Include variations in hand position and camera distance.
-* Remove incorrect labels and unnecessary duplicates.
-* Keep training and test images separate to evaluate generalization.
+### AI CLASSIFICATION
+
+* Numerical feature extraction
+* Random Forest prediction
+* Predicted letter display
+* Confidence score
+* FPS monitoring
+
+</td>
+</tr>
+</table>
 
 ---
 
-## Real-Time Prediction
+## MODEL CONFIGURATION
 
-An example of the application's output is shown below.
+### Webcam Settings
 
-<div align="center">
-
-```text
-+-----------------------------------+
-|       SIGN LANGUAGE AI            |
-|                                   |
-|       Hand Detected               |
-|       Landmarks: 21               |
-|                                   |
-|       Prediction: A               |
-|       Confidence: 94%              |
-|       FPS: 30                      |
-|                                   |
-+-----------------------------------+
-```
-
-</div>
-
-*The values are illustrative and do not represent measured project results.*
-
-The confidence score indicates the classifier's estimated support for a prediction. It should not be treated as a guarantee of correctness.
-
----
-
-## Model Architecture
-
-The project uses a landmark-based machine learning approach rather than directly classifying every image pixel.
-
-```text
-                  INPUT IMAGE
-                       |
-                       v
-              MEDIAPIPE HAND MODEL
-                       |
-                       v
-              LANDMARK COORDINATES
-                       |
-                       v
-              FEATURE REPRESENTATION
-                       |
-                       v
-               RANDOM FOREST MODEL
-                       |
-                       v
-                CLASS PREDICTION
-```
-
-This design separates hand detection from sign classification, making the workflow easier to inspect and develop.
-
----
-
-## Configuration
-
-### Webcam Selection
-
-Open `config.py`.
-
-Default camera:
+Inside `config.py`:
 
 ```python
 CAMERA_INDEX = 0
-```
-
-Alternative camera:
-
-```python
-CAMERA_INDEX = 1
-```
-
-### Webcam Mirroring
-
-For a mirrored webcam display:
-
-```python
 MIRROR_CAMERA = True
 ```
 
-For normal orientation:
+If the webcam does not open, try changing `CAMERA_INDEX` to `1`.
 
-```python
-MIRROR_CAMERA = False
-```
+Set `MIRROR_CAMERA = False` if you prefer a normal, non-mirrored camera view.
 
----
+### Training Outputs
 
-## Current Capabilities and Limitations
-
-| Capability                   | Status             |
-| :--------------------------- | :----------------- |
-| Webcam capture               | Implemented        |
-| Hand landmark detection      | Implemented        |
-| Random Forest classification | Implemented        |
-| Static sign prediction       | Core functionality |
-| Live prediction display      | Implemented        |
-| Continuous word recognition  | Future development |
-| Sentence-level translation   | Future development |
-| Text-to-speech               | Future development |
-| Dynamic gesture recognition  | Future development |
-
-The current implementation focuses on static hand poses. It does not yet translate continuous Indian Sign Language into complete sentences.
-
-Indian Sign Language includes movement, grammar, facial expressions, and other contextual information. Recognizing alphabet signs alone is not equivalent to understanding the full language.
+| File                         | Purpose                                |
+| ---------------------------- | -------------------------------------- |
+| `sign_language_model.joblib` | Trained classifier                     |
+| `labels.json`                | Class labels                           |
+| `training_report.json`       | Training or evaluation information     |
+| `landmark_cache.npz`         | Cached landmark features, if generated |
 
 ---
 
-## Future Development Roadmap
+## CURRENT PROJECT STATUS
 
-<div align="center">
+<table>
+<tr>
+<th>FEATURE</th>
+<th>STATUS</th>
+</tr>
+<tr>
+<td>Webcam integration</td>
+<td>Implemented</td>
+</tr>
+<tr>
+<td>Hand landmark detection</td>
+<td>Implemented</td>
+</tr>
+<tr>
+<td>Static sign classification</td>
+<td>Core functionality</td>
+</tr>
+<tr>
+<td>Live predictions</td>
+<td>Implemented</td>
+</tr>
+<tr>
+<td>Dynamic gesture recognition</td>
+<td>Planned</td>
+</tr>
+<tr>
+<td>Word and sentence recognition</td>
+<td>Planned</td>
+</tr>
+<tr>
+<td>Text-to-speech</td>
+<td>Planned</td>
+</tr>
+<tr>
+<td>Web application</td>
+<td>Planned</td>
+</tr>
+</table>
 
-```text
-PHASE 1
-Static Letter Recognition
-          |
-          v
-PHASE 2
-Dynamic Gesture Recognition
-          |
-          v
-PHASE 3
-Word and Phrase Recognition
-          |
-          v
-PHASE 4
-Text-to-Speech Integration
-          |
-          v
-PHASE 5
-Continuous Sign Recognition
-          |
-          v
-PHASE 6
-Web-Based Accessibility Application
-```
+The current version focuses on static hand poses representing supported letters. It does not yet translate continuous Indian Sign Language into complete sentences.
 
-</div>
+---
 
-### Planned Improvements
+## FUTURE DEVELOPMENT
 
-**Dynamic Gesture Recognition**
+<table>
+<tr>
+<td width="50%" valign="top">
 
-Use temporal models such as LSTMs, GRUs, or Transformers to process sequences of hand movements.
+### DYNAMIC GESTURES
 
-**Word and Phrase Recognition**
+Use LSTMs, GRUs, or Transformers to analyze hand movements over time.
 
-Expand the dataset to cover a verified vocabulary of Indian Sign Language words and phrases.
+</td>
+<td width="50%" valign="top">
 
-**Speech Output**
+### WORD RECOGNITION
+
+Expand the dataset to include a verified vocabulary of Indian Sign Language words.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### VOICE OUTPUT
 
 Convert recognized text into speech using a text-to-speech engine.
 
-**Improved Prediction Stability**
+</td>
+<td width="50%" valign="top">
 
-Use confidence thresholds and temporal smoothing to reduce unstable predictions.
+### TWO-HAND DETECTION
 
-**Multiple-Hand Recognition**
+Extend the system to recognize signs that require both hands.
 
-Extend the system to recognize signs requiring both hands.
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-**Web Interface**
+### SMART PREDICTIONS
 
-Build a web-based interface for easier demonstrations and access.
+Apply confidence thresholds and temporal smoothing to improve prediction stability.
 
-**Expanded Dataset**
+</td>
+<td width="50%" valign="top">
 
-Improve generalization by using more diverse, correctly labelled data.
+### WEB INTERFACE
 
----
+Develop an accessible browser-based interface for demonstrations.
 
-## Troubleshooting
-
-### Webcam Not Opening
-
-Check the camera index and ensure another application is not preventing webcam access.
-
-### MediaPipe Import Error
-
-Activate `.venv` and install the dependencies listed in `requirements.txt`.
-
-### Incorrect Predictions
-
-Check dataset labels, hand visibility, lighting, and the similarity between training and real-world examples.
-
-### Model File Missing
-
-Run `python train.py` and verify that the expected model files have been generated.
-
-### Low FPS
-
-Measure the time spent on image capture, landmark extraction, and classification to identify performance bottlenecks.
+</td>
+</tr>
+</table>
 
 ---
 
-## Project Objectives
+## TROUBLESHOOTING
 
-This project demonstrates practical applications of:
+<table>
+<tr>
+<td width="35%">
 
-* Computer vision
-* Hand landmark detection
-* Feature engineering
-* Supervised machine learning
-* Real-time inference
-* Python application development
-* Accessibility-focused AI prototyping
+**Webcam not opening**
+
+</td>
+<td>
+
+Check camera permissions, close other applications using the webcam, and verify `CAMERA_INDEX`.
+
+</td>
+</tr>
+<tr>
+<td>
+
+**MediaPipe import error**
+
+</td>
+<td>
+
+Activate `.venv` and install dependencies using `requirements.txt`.
+
+</td>
+</tr>
+<tr>
+<td>
+
+**Incorrect predictions**
+
+</td>
+<td>
+
+Check dataset labels, lighting, hand visibility, and training data variety.
+
+</td>
+</tr>
+<tr>
+<td>
+
+**Model not found**
+
+</td>
+<td>
+
+Run `python train.py` and verify that the model files exist.
+
+</td>
+</tr>
+</table>
 
 ---
-
-## Conclusion
-
-Indian Sign Language AI demonstrates how computer vision and machine learning can be combined to recognize static hand signs through a webcam.
-
-By using MediaPipe to extract hand landmarks and Random Forest to classify them, the project provides an interactive foundation for exploring more advanced sign recognition systems.
-
-Future development can extend this foundation toward dynamic gestures, word recognition, speech output, and broader accessibility applications.
 
 <div align="center">
 
-**COMPUTER VISION | MACHINE LEARNING | REAL-TIME AI**
+## THE VISION
 
-*Building a foundation for more accessible human-computer interaction.*
+<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=600&size=22&pause=1200&color=00F7FF&center=true&vCenter=true&width=750&height=50&lines=GESTURES+INTO+INTELLIGENCE;COMPUTER+VISION+MEETS+HUMAN+COMMUNICATION;BUILDING+ACCESSIBILITY+THROUGH+AI" alt="Animated closing text"/>
 
-</div>
+**INDIAN SIGN LANGUAGE AI**
 
----
+*Exploring the intersection of computer vision, machine learning, and accessibility.*
 
-<div align="center">
+<br>
 
-### Project Demo
-
-![Sign Language Detection Demo](demo.png)
+<img src="https://img.shields.io/badge/BUILT%20WITH-PYTHON-00F7FF?style=for-the-badge&labelColor=080B18"/>
+<img src="https://img.shields.io/badge/POWERED%20BY-AI-7B61FF?style=for-the-badge&labelColor=080B18"/>
 
 </div>
